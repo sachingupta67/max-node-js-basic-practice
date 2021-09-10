@@ -3,4 +3,4 @@
 3. ESLINT SETUP
    - initialise eslint configuration & follow the instruction as per your requirement
      command : npx eslint --init 
-
+4. create .eslintignore file 
