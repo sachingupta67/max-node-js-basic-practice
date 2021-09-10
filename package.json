@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "lint": "eslint src/**/*.{js,jsx} --max-warnings=0",
-		"lint:fix": "eslint --fix --max-warnings=0 src/**/*.{js,jsx}",
-		"lint:fix-dry-run": "eslint --fix-dry-run src/**/*.{js,jsx}",
-		"lint:show-only-errors": "eslint --quiet src/**/*.{js,jsx}",
+		"lint:fix": "eslint --fix --max-warnings=0 *.js",
+		"lint:fix-dry-run": "eslint --fix-dry-run *.js",
+		"lint:show-only-errors": "eslint --quiet *.js",
 		"prettier:fix": "prettier --write .",
 		"prettier:check": "prettier --check .",
 		"lint:fix-unchanged-file": "eslint --fix --max-warnings=0 $(git diff --name-only HEAD -- '*.jsx' '*.js' | xargs)"
@@ -29,7 +29,7 @@
     "prettier": "^2.4.0"
   },
   "lint-staged": {
-		"*.{js}": [
+		"*.js": [
 			"yarn prettier:fix",
 			"yarn lint:fix"
 		]
