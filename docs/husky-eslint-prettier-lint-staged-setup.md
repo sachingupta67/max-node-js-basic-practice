@@ -7,6 +7,9 @@
 5. How to check eslint is working 
     - Yarn : yarn eslint .
     - Node : npx eslint .
+6. Extends prettier 
+    - yarn add -D eslint-config-prettier
+    - then extend in .eslintrc.json file
 
 
 
