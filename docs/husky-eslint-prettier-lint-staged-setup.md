@@ -1,2 +1,6 @@
 1. run command : yarn add -D eslint prettier husky lint-staged 
 2. Create .prettierrc file and put rules in this
+3. ESLINT SETUP
+   - initialise eslint configuration & follow the instruction as per your requirement
+     command : npx eslint --init 
+
