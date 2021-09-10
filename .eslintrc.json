@@ -12,5 +12,8 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-unused-vars":"error",
+        "max-lines-per-function": ["error", 50],
+        "no-console":"error"
     }
 }
