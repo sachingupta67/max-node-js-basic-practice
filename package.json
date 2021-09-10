@@ -1,45 +1,45 @@
 {
- "name": "node-js-complete-guide",
- "version": "1.0.0",
- "description": "node js by max",
- "main": "app.js",
- "scripts": {
-  "start": "nodemon app.js",
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "prepare": "husky install",
-  "lint": "eslint src/**/*.{js,jsx} --max-warnings=0",
-  "lint:fix": "eslint --fix --max-warnings=0 *.js",
-  "lint:fix-dry-run": "eslint --fix-dry-run *.js",
-  "lint:show-only-errors": "eslint --quiet *.js",
-  "prettier:fix": "prettier --write .",
-  "prettier:check": "prettier --check .",
-  "lint:fix-unchanged-file": "eslint --fix --max-warnings=0 $(git diff --name-only HEAD -- '*.jsx' '*.js' | xargs)"
- },
- "author": "Sachin Gupta",
- "license": "ISC",
- "dependencies": {
-  "body-parser": "^1.19.0",
-  "express": "^4.17.1",
-  "nodemon": "^2.0.12"
- },
- "devDependencies": {
-  "eslint": "^7.32.0",
-  "eslint-config-airbnb-base": "^14.2.1",
-  "eslint-config-prettier": "^8.3.0",
-  "eslint-plugin-import": "^2.24.2",
-  "husky": "^7.0.2",
-  "lint-staged": "^11.1.2",
-  "prettier": "^2.4.0"
- },
- "lint-staged": {
-  "*.js": [
-   "yarn prettier:fix",
-   "yarn lint:fix"
-  ]
- },
- "husky": {
-  "hooks": {
-   "pre-commit": "lint-staged"
+  "name": "node-js-complete-guide",
+  "version": "1.0.0",
+  "description": "node js by max",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint": "eslint src/**/*.{js,jsx} --max-warnings=0",
+    "lint:fix": "eslint --fix --max-warnings=0 *.js",
+    "lint:fix-dry-run": "eslint --fix-dry-run *.js",
+    "lint:show-only-errors": "eslint --quiet *.js",
+    "prettier:fix": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "lint:fix-unchanged-file": "eslint --fix --max-warnings=0 $(git diff --name-only HEAD -- '*.jsx' '*.js' | xargs)"
+  },
+  "author": "Sachin Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn prettier:fix",
+      "yarn lint:fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
- }
 }
