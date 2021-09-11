@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const rootDir = require('../util/path');
 
 const router = express.Router();
 
@@ -13,7 +14,9 @@ router.get('/add-product', (req, res) => {
   //    </form>`
   // );
 
-  res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html'));
+  // res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html')); // TODO : replacement of above code for serving html
+  // res.sendFile(path.join(__dirname, '..', 'views', 'add-product.html')); // TODO : No slash required this could be alternative of above code as well
+  res.sendFile(path.join(rootDir, 'views', 'add-product.html')); // same as above only we use utility for that
 });
 
 // Path : /admin/add-product ==>POST
