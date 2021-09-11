@@ -4,6 +4,8 @@ const rootDir = require('../util/path');
 
 const router = express.Router();
 
+const products = []; // TODO : Temporary Storage
+
 // Path : /admin/add-product ==>GET
 
 router.get('/add-product', (req, res) => {
@@ -22,7 +24,11 @@ router.get('/add-product', (req, res) => {
 // Path : /admin/add-product ==>POST
 
 router.post('/add-product', (req, res) => {
+  products.push({ title: req.body.title });
   res.redirect('/');
 });
 
-module.exports = router;
+// module.exports = router;
+
+exports.routes = router;
+exports.products = products;
