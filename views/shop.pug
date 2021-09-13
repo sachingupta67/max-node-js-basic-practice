@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{docTitle}
+        link(rel="stylesheet" href="/css/main.css")
+        link(rel="stylesheet" href="/css/product.css")
+    body 
+        header.main-header
+            nav.main-header_nav  
+                ul.main-header_item-list
+                    li.main-header_item  
+                        a.active(href="/") Shop
+                    li.main-header_item  
+                        a(href="/admin/add-product") Add Product
+        main 
+            .grid  
+                article.card.product-item
+                    header.card_header  
+                        h1.product_title Great Book 
+                    div.card_image
+                        img(src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1541963463532-d68292c34b19%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fimages%2Fthings%2Fbook&tbnid=2eIb5BjhQiiZzM&vet=12ahUKEwi61r2bi_zyAhVMfn0KHet1C7UQMygBegUIARDNAQ..i&docid=nBiD9BWYMB87aM&w=1000&h=1498&q=images&client=safari&ved=2ahUKEwi61r2bi_zyAhVMfn0KHet1C7UQMygBegUIARDNAQ", alt="")    
+

@@ -7,6 +7,12 @@ const shopRoutes = require('./routes/shop');
 
 const app = express();
 
+/* *******ADDING TEMPLATE ENGINE ******* */
+// TODO : PUG
+app.set('view engine', 'pug'); // view engine, template engine name
+app.set('views', 'views'); // view , foldername
+/*   **************** */
+
 // app.use(bodyParser.urlencoded());  // use for parsing request body but now its deprecated
 
 /* *******REQ BODY PARSING *****  */
