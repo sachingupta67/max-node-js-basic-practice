@@ -11,7 +11,14 @@ router.get('/', (req, res) => {
   // res.sendFile(path.join(__dirname, '../', 'views', 'shop.html')); // it will automatically concat path in Window and Linux
   // res.sendFile(path.join(rootDir, 'views', 'shop.html')); // TODO: Plane HTML
   const { products = [] } = adminData;
-  res.render('shop', { prods: products, docTitle: 'Shop' }); // TODO : default method render to run templet file , no add to attach views only give file name, no need to .pug already define in app js
+  res.render('shop', {
+    prods: products,
+    pageTitle: 'Shop',
+    path: '/',
+    hasProducts: products.length > 0,
+    activeShop: true,
+    productCSS: true,
+  }); // TODO : default method render to run templet file , no add to attach views only give file name, no need to .pug already define in app js
 });
 
 module.exports = router;
